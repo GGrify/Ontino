@@ -1,0 +1,71 @@
+/* Первый экран */
+.firstScreen{
+    height: 80vh;
+    background-image: url("../img/meat.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstScreen h1{
+    font-family: "Righteous";
+    font-size: 64px;
+    font-weight: normal;
+    display: inline;
+}
+.firstScreen h1::after{
+    content: '';
+    display: block;
+    height: 9px;
+    background-color: #FAFAFF;
+}
+.firstScreen p{
+    font-size: 30px;
+    margin-top: 30px;
+}
+/* Основной блок */
+.wrapper{
+    margin: 100px 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    text-align: center;
+}
+.wrapper div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper h2{
+    color: #252627;
+    font-family: "Caveat";
+    font-size: 64px;
+    font-weight: normal;
+}
+.wrapper p{
+    color: #252627;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px 0 15px 0;
+}
+.wrapper a{
+    color: #FFA400;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.wrapper a::after{
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #FFA400;
+}
+.wrapper img{
+    width: 100%;
+}
