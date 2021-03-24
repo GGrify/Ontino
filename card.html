@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon.svg">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/card.css">
 
-    <title>Ontino</title>
+    <title>Ontino - Card</title>
 </head>
 <body>
     <header>
             <div class="logo">
-                <a href="main.html">Ontino</a>
+                <a href="">Ontino</a>
             </div>
             <menu>
-                <a href="main.html" class="active_page menu_li">Главная</a>
+                <a href="main.html" class="menu_li">Главная</a>
                 <a href="menu.pdf" class="menu_li">Меню</a>
                 <a href="shop.html" class="menu_li">Магазин</a>
                 <a href="contact.html" class="menu_li">Контакты</a>
@@ -42,62 +42,47 @@
                 </a>
             </div>
     </header>
-    
-    <div class="firstScreen">
-        <h1>Ontino</h1>
-        <p>Готовы быть открыты для вас</p>
+    <div class="upper_block">
+        <h1>Корзина</h1>
+        <svg width="60" height="49" viewBox="0 0 60 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="39" r="10" fill="#A4031F"/>
+            <circle cx="30" cy="10" r="10" fill="#A4031F"/>
+            <circle cx="50" cy="39" r="10" fill="#A4031F"/>
+        </svg>
+        <p>Заказывайте свежие блюда прямо на дом</p>
     </div>
     
-    <div class="wrapper">
-        <div>
-            <h2>Меню</h2>
-            <p>У нас огромное количество вкусных блюд, каждый посетитель найдет себе что-то по душе. Абсолютно все сделано прекрасными поварами из продуктов высочайшего качества.</p>
-            <a href="menu.pdf">Полное меню</a>
-        </div>
-        <div>
-            <img src="img/food.jpg" alt="foodFoto">
-        </div>
-        <div>
-            <img src="img/deliver.jpg" alt="Deliver">
-        </div>
-        <div>
-            <h2>Онлайн заказ</h2>
-            <p>У вас есть прекрасная возможность заказать любое блюдо для себя прямо у себя дома. Наш курьер доставит ваш заказ в любую точку города в короткие сроки.</p>
-            <a href="shop.html">Перейти в магазин</a>
-        </div>
-        <div>
-            <h2>Бронирование</h2>
-            <p>Чтобы забронировать столик, вам необходимо позвонить по нашему номеру. Ресторан открыт с 7 до 12 часов. По тому же времени работает прием заказов.</p>
-            <a href="">+1 (234) 567-89-00</a>
-        </div>
-        <div>
-            <img src="img/tables.jpg" alt="Tables">
-        </div>
-    </div>
 
-    <h2 class="h2Iterer">Интерьер</h2>
-    <!-- Слайдер -->
-    <div class="slider">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item">
-                <img style="width: 100%;" src="img/interer.jpg" alt="">
-            </div>
-            <div class="slider__item">
-                <img style="width: 100%;" src="img/interer.jpg" alt="">
-            </div>
-            <div class="slider__item">
-                <img style="width: 100%;" src="img/interer.jpg" alt="">
-            </div>
-            <div class="slider__item">
-                <img style="width: 100%;" src="img/interer.jpg" alt="">
-            </div>
-            <div class="slider__item">
-                <img style="width: 100%;" src="img/interer.jpg" alt="">
-            </div>  
-          </div>
+    <div class="wrapper">
+        <div class="lineOfTable">
+            <div>Продукт</div>
+            <div>Цена</div>
+            <div>Количество</div>
+            <div>Сума</div>
+            <div>&nbsp;</div>
         </div>
-      </div>
+        <div class="lineOfTable">
+            <div>Яичница</div>
+            <div>50₴</div>
+            <div>1</div>
+            <div>50₴</div>
+            <div><a href="" class="close"></a></div>
+        </div>
+        <div class="lineOfTable">
+            <div>Стейк</div>
+            <div>500₴</div>
+            <div>1</div>
+            <div>500₴</div>
+            <div><a href="" class="close"></a></div>
+        </div>
+
+
+        <div class="result">
+            <p>Общая сумма: 550₴</p>
+            <button><a href="">Подтвердить</a></button>
+        </div>
+    </div>
+    
 
 
     <footer>
@@ -136,6 +121,5 @@
             </a>
         </div>
     </footer>
-    <script src="js/slider.js"></script>
 </body>
 </html>

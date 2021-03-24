@@ -59,3 +59,27 @@
     font-size: 20px;
     color: #FFA400;
 }
+
+
+
+
+@media (max-width: 850px){
+    .wrapper{
+        padding: 0 5%;
+    }
+    .list{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .selector{
+        width: 40%;
+    }
+    .list_items{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 500px){
+    .selector{
+        width: 70%;
+    }
+}

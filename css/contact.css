@@ -56,3 +56,27 @@ textarea{
     height: 100%;
     width: 100%;
 }
+
+
+
+
+@media (max-width: 850px){
+    .contacts{
+        grid-template-columns: 1fr;
+    }
+    .message{
+        margin-top: 50px;
+    }
+    .map{
+        height: 400px;
+    }
+}
+@media (max-width: 500px){
+    .contacts{
+        padding: 80px 7%;
+    }
+    .map{
+        height: 250px;
+        padding: 0;
+    }
+}

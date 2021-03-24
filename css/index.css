@@ -73,7 +73,6 @@ menu{
 /* Футер */
 footer{
     background-color: #A4031F;
-    height: 150px;
     padding: 25px 10%;
     display: flex;
     justify-content: space-between;
@@ -99,4 +98,43 @@ footer p{
 .WithUs a {
     display: block;
     margin-top: 13px;
+}
+
+
+
+
+@media (max-width: 850px){
+    header{
+        flex-direction: column;
+        height: 90vh;
+        justify-content: space-evenly;
+    }
+    menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon{
+        margin: 0 15px;
+    }
+    .upper_block{
+        text-align: center;
+    }
+    .upper_block p{
+        font-size: 24px;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .opentime{
+        margin: 40px 0;
+    }
+}
+@media (max-width: 500px){
+    .upper_block{
+        padding: 45px 4%;
+    }
+    .upper_block h1{
+        font-size: 55px;
+    }
 }
